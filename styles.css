@@ -1,0 +1,98 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #80d0c7, #13547a);
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s ease;
+}
+
+.weather-app {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 350px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.weather-app:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.weather-app h1 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #27729a;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease;
+}
+
+.weather-app input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    font-size: 18px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.weather-app input:focus {
+    border-color: #778f3b;
+    box-shadow: 0 0 5px rgba(0, 121, 107, 0.5);
+}
+
+.weather-app button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00796b;
+    color: #181919;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.weather-app button:hover {
+    background-color: #004d40;
+    transform: translateY(-2px);
+}
+
+#weather-result {
+    margin-top: 25px;
+    font-size: 20px;
+    color: #004d40;
+    background: rgba(0, 121, 107, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+@media (max-width: 400px) {
+    .weather-app {
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .weather-app h1 {
+        font-size: 22px;
+    }
+
+    .weather-app input, .weather-app button {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    #weather-result {
+        font-size: 18px;
+        padding: 10px;
+    }
+}
